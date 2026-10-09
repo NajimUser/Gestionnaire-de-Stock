@@ -30,14 +30,14 @@ class Stock
         return count($this->produits);
     }
 
-    public function valeurTotale(): float
-    {
-        $sum = 0.0;
-        foreach ($this->produits as $p) {
-            $sum += $p->valeurStock();
-        }
-        return $sum;
+    public function valeurTotale(): float {
+    $sum = 0.0;
+    foreach ($this->produits as $p) {
+        $sum += $p->getPrix(); // BUG : additionne le prix au lieu de prix * quantite !
     }
+    return $sum;
+}
+
 
     public function produitsEnRupture(): array
     {
