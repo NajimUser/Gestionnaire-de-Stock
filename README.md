@@ -8,3 +8,4 @@ Application de gestion de stock en ligne de commande développée en POO PHP.
 - Commande (gestion des lignes et validation)
 
 ## Équipe
+Étudiant SOUAD NAJIM : Classe Stock
